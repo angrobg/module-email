@@ -31,7 +31,7 @@ class Ses implements TransportInterface
         $credentials = new Credentials($config['user'], $config['password']);
         $client = SesClient::factory([
             'credentials' => $credentials,
-            'region'  => 'us-east-1',//'us-west-2'
+            'region'  => 'eu-central-1',//'us-west-2'
             'version' => '2010-12-01', //'latest'
             'timeout' => 10,
             // 'debug'   => true
